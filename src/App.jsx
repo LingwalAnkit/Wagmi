@@ -3,6 +3,7 @@ import { WagmiProvider } from "wagmi";
 import { config } from "../config";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import DisconnectWallets from "./components/disconnect";
+import TotalBalance from "./components/checkBalance";
 
 const client = new QueryClient();
 
