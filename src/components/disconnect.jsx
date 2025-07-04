@@ -1,6 +1,7 @@
 import { useAccount, useDisconnect } from "wagmi";
 import ConnectWallets from "./connect";
 import TotalBalance from "./checkBalance";
+import AllowUSDT from "./allowUSDT";
 
 function DisconnectWallets() {
   const { address } = useAccount();
@@ -14,6 +15,7 @@ function DisconnectWallets() {
             Connected: <span className="text-blue-600">{address}</span>
           </p>
           <TotalBalance></TotalBalance>
+          <AllowUSDT></AllowUSDT>
           <button
             onClick={() => disconnect()}
             className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
